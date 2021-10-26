@@ -6,7 +6,7 @@
 
 Ticker secondTick;
 void batteryMonitorTicker() {
-    BatteryMonitor.doStuff();
+    BatteryMonitor.update();
 }
 
 void setup() {

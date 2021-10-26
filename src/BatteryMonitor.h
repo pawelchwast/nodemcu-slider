@@ -8,6 +8,7 @@ class BatteryMonitor_ {
   private:
     BatteryMonitor_() = default; // Make constructor private
     float busVoltage;
+    float power;
 
   public:
     static BatteryMonitor_ &getInstance(); // Accessor for singleton instance
@@ -17,8 +18,9 @@ class BatteryMonitor_ {
 
   public:
     void begin();
-    void doStuff();
+    void update();
     float getBusVoltage();
+    float getPower();
 };
 
 extern BatteryMonitor_ &BatteryMonitor;
