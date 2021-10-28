@@ -27,7 +27,8 @@ class Frames {
         display->setFont(ArialMT_Plain_10);
 
         display->drawString(0 + x, 10 + y, "Voltage " + String(BatteryMonitor.getBusVoltage()) + "V");
-        display->drawString(0 + x, 20 + y, "Power " + String(BatteryMonitor.getPower()) + "mW");
+        display->drawString(0 + x, 20 + y, "Current " + String(BatteryMonitor.getCurrent()) + "mA");
+        display->drawString(0 + x, 30 + y, "Power " + String(BatteryMonitor.getPower()) + "mW");
         return false;
     }
 
